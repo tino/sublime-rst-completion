@@ -3,7 +3,11 @@
 
 	"completions":
 	[
-		{ "trigger": "title", "contents" : "${1}\n${1/./=/g}" },
+		{ "trigger": "title", "contents" : "${1/./=/g}\n${1}\n${1/./=/g}" },
+
+		{ "trigger": "sec", "contents" : "${1}\n${1/./=/g}" },
+		{ "trigger": "subs", "contents" : "${1}\n${1/./-/g}" },
+		{ "trigger": "sss", "contents" : "${1}\n${1/./~/g}" },
 
 		{ "trigger": "e", "contents": "*${1}*" },
 		{ "trigger": "se", "contents": "**${1}**" },
